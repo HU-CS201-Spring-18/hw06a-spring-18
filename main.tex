@@ -1,0 +1,70 @@
+\documentclass[addpoints]{exam}
+
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{tikz}
+
+% Header and footer.
+\pagestyle{headandfoot}
+\runningheadrule
+\runningfootrule
+\runningheader{CS 201 DS II}{Homework 6}{Spring 2018}
+\runningfooter{}{Page \thepage\ of \numpages}{}
+\firstpageheader{}{}{}
+
+\qformat{{\large\bf Exercise \thequestiontitle}\hfill[\totalpoints\ points]}
+\boxedpoints
+\printanswers
+
+\title{Habib University\\CS 201 Data Structures II\\Spring 2018}
+\author{Don't Grade Me}  % replace with your ID, e.g. sh01703
+\date{Homework 6\\\numpoints\ points. Due: --}
+
+\begin{document}
+\maketitle
+
+\begin{questions}
+
+  \titledquestion{9.8*}
+  Suppose a 2-4 tree, $T$, has $n_e$ external nodes and $n_i$ internal nodes.
+  \begin{parts}
+    \part[3] What is the minimum value of $n_i$, as a function of $n_e$?
+    \part[2] What is the maximum value of $n_i$, as a function of $n_e$?
+    \part[5] If $T'$ is a red-black tree that represents $T$, then how many red nodes does $T'$ have?
+  \end{parts}
+
+  \titledquestion{9.10}[10]
+  Suppose you have two red-black trees $T_1$ and $T_2$ that have the same black height, $h$, and such that the largest key in $T_1$ is smaller than the smallest key in $T_2$. Show how to merge $T_1$ and $T_2$ into a single red-black tree in $O(h)$ time.
+  
+  \question
+  Consider the set of keys $K = \{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15\}$.
+  \begin{parts}
+    \part[5] Draw a (2,4) tree storing $K$ as its keys using the fewest number of nodes.
+    \part[5] Draw a (2,4) tree storing $K$ as its keys using the maximum number of nodes.
+  \end{parts}
+  \begin{solution}
+    % Write your solution here
+  \end{solution}
+
+  \question[10]
+  For the following statements about red-black trees, provide a justification for each true statement and a counterexample for each false one.
+  \begin{parts}
+    \part A subtree of a red-black tree is itself a red-black tree.
+    \part A node that does not have a sibling is red.
+    \part There is a unique (2,4) tree associated with a given red-black tree.
+    \part There is a unique red-black tree associated with a given (2, 4) tree.
+  \end{parts}
+
+  \question[10]
+  Consider a tree $T$ storing 100,000 entries. What is the worst-case height of T in the following cases?
+  \begin{parts}
+    \part $T$ is a BST.
+    \part $T$ is an AVL tree.
+    \part $T$ is a (2,4) tree.
+    \part $T$ is a red-black tree.
+  \end{parts}
+\end{questions}
+
+* - The question has been modified from the one in the book.
+
+\end{document}
